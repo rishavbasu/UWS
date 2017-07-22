@@ -1,0 +1,27 @@
+{
+  "name": "uws-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "async": "^2.4.1",
+    "body-parser": "^1.17.2",
+    "csv-parser": "^1.11.0",
+    "express": "^3.2.6",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "jade": "*",
+    "kafka-node": "^1.6.2",
+    "path": "^0.12.7"
+  },
+  "description": "Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\r  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [
+    "gateway"
+  ],
+  "author": "Pinaki Chanda",
+  "license": "ISC"
+}

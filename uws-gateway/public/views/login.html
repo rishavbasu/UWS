@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="loginApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script type="text/javascript" src="angular/login.js"></script>
+
+</head>
+<body ng-controller="loginController">
+	UserName :
+	<input type="text" name="uName" ng-model="data.uName" />{{data.uName}}
+	<br> Password :
+	<input type="text" name="passwd" ng-model="data.passwd" />{{data.passwd}}
+	<br>{{data}}
+	<button ng-click="submit();">Submit</button>
+</body>
+</html>
