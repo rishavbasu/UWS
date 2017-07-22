@@ -1,0 +1,28 @@
+server:
+  port: 8000
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    instanceId: ${spring.application.name}:${server.port}
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    account-service:
+      path: /account/**
+      serviceId: account-service
+      stripPrefix: false
+    notification-service:
+      path: /notification/**
+      serviceId: notification-service
+      stripPrefix: false
+      
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
