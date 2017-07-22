@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: uws-gateway
+
+cloud:
+  config:
+    uri: http://localhost:8888
+    
+sidecar:
+  port: 7000
+  health-uri: http://localhost:7000/health
