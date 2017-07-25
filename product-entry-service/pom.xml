@@ -7,7 +7,7 @@
 		<version>Angel.SR6</version>
 	</parent>
 	<groupId>org.rishav</groupId>
-	<artifactId>springcloud</artifactId>
+	<artifactId>product-entry-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
