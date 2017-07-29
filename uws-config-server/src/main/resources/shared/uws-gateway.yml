@@ -18,6 +18,10 @@ zuul:
       path: /notification/**
       serviceId: notification-service
       stripPrefix: false
+    registration-service:
+      path: /register/**
+      serviceId: registration-service
+      stripPrefix: false
       
 hystrix:
   command:

@@ -7,7 +7,8 @@ router.use(bodyParser.json());
 var path = require('path');
 
 router.get('/', function(req, res, next){
-	res.sendFile(path.join(__dirname, "../public/views/login.html"));
+	res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({ "status":"COMMING SOON ..!!" }));
 });
 /********************************/
 router.get('/health', function(req, res, next){
@@ -15,13 +16,14 @@ router.get('/health', function(req, res, next){
     res.send(JSON.stringify({ "status":"UP" }));
 });
 /********************************/
-router.get('/home', function(req, res, next){
-	res.sendFile(path.join(__dirname, "../public/views/index.html"));
+router.get('/registration', function(req, res, next){
+	res.sendFile(path.join(__dirname, "../public/views/registerBusinessHouse.html"));
 });
 
 var LoginController = require("../controller/LoginController");
+var RegisterController = require("../controller/RegisterController");
 
 router.use('/login', LoginController);
-
+router.use('/register', RegisterController);
 
 module.exports = router;
