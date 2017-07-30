@@ -1,5 +1,8 @@
-package org.rishav;
+package com.uws.productentry.dto;
+
 import java.util.List;
+
+import com.uws.productentry.domainobject.Product;
 
 public class ProductEntryForm {
 
