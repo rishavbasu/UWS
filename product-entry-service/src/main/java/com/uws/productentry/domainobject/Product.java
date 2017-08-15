@@ -16,9 +16,11 @@ public class Product implements Serializable{
 	
 	@Id
 	private String id;
-	
+	private String product;
 	private String	description;
 	private byte[]	image;
+	private String createdDate;
+	private String updatedDate;
 
 	public String getId() {
 		return id;
