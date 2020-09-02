@@ -46,4 +46,11 @@ public class ProductEntryServiceImpl implements ProductEntryService {
 		return productsRepository.findOne(id);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.uws.productentry.service.ProductEntryService#getAllProducts()
+	 */
+	@Override
+	public Product getAllProducts() {
+		return productsRepository.findAll();
+	}
 }
