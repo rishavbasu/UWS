@@ -41,4 +41,9 @@ public class ProductEntryController {
 	public Product fetchProductById(@PathVariable String productId) {
 		return productEntryService.fetchProductById(productId);
 	}
+	
+	@RequestMapping(method = RequestMethod.GET)
+	public Product fetchProductById() {
+		return productEntryService.getAllProducts();
+	}
 }
