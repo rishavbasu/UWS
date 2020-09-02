@@ -12,6 +12,7 @@ import org.springframework.web.multipart.support.ByteArrayMultipartFileEditor;
 import com.uws.productentry.domainobject.Product;
 import com.uws.productentry.dto.ProductEntryForm;
 import com.uws.productentry.service.ProductEntryService;
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/products")
@@ -43,7 +44,7 @@ public class ProductEntryController {
 	}
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public Product fetchProductById() {
+	public List<Product> fetchProductById() {
 		return productEntryService.getAllProducts();
 	}
 }
