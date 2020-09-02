@@ -1,6 +1,7 @@
 package com.uws.productentry.service;
 
 import com.uws.productentry.domainobject.Product;
+import java.util.List;
 
 /**
  * @author Rishav
@@ -23,4 +24,6 @@ public interface ProductEntryService {
 	 * @return
 	 */
 	Product fetchProductById(String id);
+	
+	List<Product> getAllProducts();
 }
