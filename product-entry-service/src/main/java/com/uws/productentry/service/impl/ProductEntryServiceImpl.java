@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.uws.productentry.domainobject.Product;
 import com.uws.productentry.repository.mongodb.ProductsRepository;
 import com.uws.productentry.service.ProductEntryService;
+import java.util.List;
 
 /**
  * @author Rishav
@@ -50,7 +51,7 @@ public class ProductEntryServiceImpl implements ProductEntryService {
 	 * @see com.uws.productentry.service.ProductEntryService#getAllProducts()
 	 */
 	@Override
-	public Product getAllProducts() {
+	public List<Product> getAllProducts() {
 		return productsRepository.findAll();
 	}
 }
