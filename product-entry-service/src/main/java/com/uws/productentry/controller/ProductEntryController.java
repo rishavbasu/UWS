@@ -43,7 +43,7 @@ public class ProductEntryController {
 		return productEntryService.fetchProductById(productId);
 	}
 	
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value = "all", method = RequestMethod.GET)
 	public List<Product> fetchProductById() {
 		return productEntryService.getAllProducts();
 	}
